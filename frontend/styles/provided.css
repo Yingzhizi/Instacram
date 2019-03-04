@@ -1,0 +1,347 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    position: static;
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+    display: block;
+    float: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+.post {
+    max-width: 640px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-title {
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-thumb {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid snow;
+}
+
+.post-image {
+    width: 640px;
+    height: 640px;
+}
+
+@media screen and (max-width: 500px) {
+    .post {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        border-top: 1px solid rgba(0,0,0,.0975);
+        max-height: 60vh;
+    }
+
+    .post-image {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #feed > * {
+        flex: 1 1 45%;
+        height: auto;
+    }
+}
+
+/* Add your styles here */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-register {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-register .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-register .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+.form-register input[type="text"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.form-register input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.form-register input[type="email"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.mb-4 {
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.mt-5 .mb-3 {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.mb-3 {
+    margin-top: 20px;
+    margin-left : 80px;
+}
+
+.post-container {
+    margin: 5px;
+}
+
+.post-container p {
+    margin-left: 10px;
+}
+
+h5 {
+    margin-left: 10px;
+}
+
+.post-container .num-of-comments p{
+    font-weight: bold;
+}
+
+.num-of-comments div p {
+    font-weight: bold;
+}
+
+.container {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 auto 30px;
+    max-width: 935px;
+    width: 100%;
+}
+
+.profile-pic-container {
+    margin: 60px;
+    margin-left: 100px;
+    padding: 10px;
+    display: inline-block;
+}
+.profile-pic-container h1 {
+    display: inline-flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.USER_NAME {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 200;
+        text-align: center;
+}
+
+.username-container {
+    display: block;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nothing {
+    margin-top: 4px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.span-box {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.details li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: fixed;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.num-of-comments p {
+    color: red;
+}
+
+
+.Comment-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.single-comment {
+    display: inline-block;
+    flex-direction: row;
+}
+
+.comment-user-name h5 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.seeMore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+Wed Oct 24 11:17    Clone the gitlab repo
+Wed Oct 24 11:21    Started to read the relevant documents in backend and front end
+                    directory
+Wed Oct 24 12:02    Starting level 0 now
+Wed Oct 24 12:04    Added bootstrap the html so css is much nicer
+Wed Oct 24 12:24    Created a simple feed interface that shows what is in feed.json.
+                    Current implemention includes who posted it, when it was posted, the
+                    image, likes, description and comments.
+Wed Oct 24 12:56    Tested the feed interface to make sure it works.
+Wed Oct 24 13:06    Added a login form at the top instacram page
+Wed Oct 24 13:17    Made login form appear first before entering into instacram home page
+Wed Oct 24 13:29    Made a hardcoded username and password in checklogin function to see
+                    if the login form works
+Wed Oct 24 13:42    Tested login form with hardcoded username and password.
+Wed Oct 24 14:17    Added a registration form below the sign in button
+Wed Oct 24 15:06    After playing around and testing instacram, I think I have
+                    finished level 0
+Wed Oct 24 18:36    Starting level 1 now
+Wed Oct 24 18:42    Learning how to understand the API
+Wed Oct 24 19:03    Changing the login function so that it verifies the provided
+                    credentials with the backend rather than hardcoding it.
+Wed Oct 24 19:21    Ran into some bugs with login as the wrong response is being
+                    outputted (should be 200 not 403)
+Wed Oct 24 20:05    Fixed the bug and correct response is now being produced but stuck
+                    how to get the token
+Wed Oct 24 21:16    Found how to get the token and user can now see home page
+Tue Oct 25 12:18    Notice there was a bug everytime page is refreshed user is taken back
+                    to home page but dont know how to fix this yet
+Tue Oct 25 13:17    Tested to see when user logins in, if the feed sourced from the
+                    backend
+Tue Oct 25 15:46    The test shows that the feed is sourced from the backend
+Tue Oct 25 14:01    Tested different user's credential to see if login form works for
+                    different users
+Tue Oct 25 15:18    Added a log out feature on instacram logged in page so that user can
+                    log out. Logged out users are shown the log in page
+Tue Oct 25 16:47    Fixed up registration form, it works now and new users can be signed
+                    up to service and creates the user in the database
+Tue Oct 25 21:13    Started to test current instacram page to see if any bugs can be
+                    found
+Tue Oct 25 22:02    From the thorough test, level 1 seems complete
+Fri Oct 26 13:03    Attempting to fix up the refresh bug that takes logged in users back
+                    to log in screen
+Fri Oct 26 14:02    Still stuck on the same bug and it making me crazy
+Fri Oct 26 16:20    Attended help lab to find out how to fix the bugs
+Fri Oct 26 22:14    After getting help from help lab bug was fixed for refresh. If user 
+                    refresh page they stay on the page they are at
+Sat Oct 27 11:46    Starting level 2 now
+Sat Oct 27 12:25    Attempting to show likes by using a modal
+Sat Oct 27 13:32    Successfully show the list of users who liked a post
+Sat Oct 27 14:05    Fixed up styling of users who likes a post so it looks nicer
+Sat Oct 27 13:22    Started to attempt showing comments on a post. User would press
+                    view post below a image to expand comments on a post
+Sat Oct 27 17:07    Successfully implemented show comments on a post
+Sat Oct 27 17:23    Testing show likes and show comments to make sure they work over
+                    different post and aren't buggy
+Sat Oct 27 18:45    Attempting to implement like user generated content. 
+Sat Oct 27 21:22    Implemented like user generated content but page needs to be
+                    refreshed in order for the like to be seen
+Sat Oct 27 22:06    Testing like user generated content
+Sat Oct 27 22:42    A small bug was found sometimes like too many post and refreshing the
+                    page results in some of the post not being liked
+Sun Oct 28 00:16    Bug was fixed and like user generated content. Now user can like
+                    multiple content and on refresh all post that was liked will be liked
+Sun Oct 28 00:42    Added pressing the like button on an already liked post will result
+                    in the post being unliked
+Sun Oct 28 02:13    Implemented post new content
+Sun Oct 28 02:29    Testing post new comment to make sure that it works and there are no
+                    bugs
+Sun Oct 28 02:56    After adding in a few new post and logging back out and it posting 
+                    new content works
+Sun Oct 28 02:56    Able to follow and unfollow person and able to show user's owe profile page, and check the following list
+Sun Oct 28 03:56    click logo to went back to main page 
+                    new content works
+Sun Oct 28 04:30    user's profile page now can see name, following and followed people, and also all the posts
+Sun Oct 28 06:56    add load more button in the main page
+Sun Oct 28 07:56    now through the main page, user can click the user name then see their profile page which similar to the own profile page
+		    very sorry about I do not have time to proceed anymore :((((((( 

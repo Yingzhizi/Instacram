@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+
+    <!-- This is an form let user to login -->
+    <div id="loginForm">
+        <!-- add login script here -->
+    </div>
+    <div id="signUpForm">
+        <!-- probably has register script here -->
+    </div>
+    <!-- This part is the main page, can only been show up after login/sign up-->
+    <div id="mainPage">
+        <header class='banner'>
+            <h1 id="ins">Instacram</h1>
+            <ul class='nav'>
+                <!-- <li class="nav-item"><input type="file"/></li> -->
+                <div class="search-container">
+                    <form>
+                      <input type="text" placeholder="Search.." name="search" id="personWantToFollow">
+                      <button type="button" id="followUser">Follow</button>
+                    </form>
+                </div>
+
+                <div class="search-container">
+                    <form>
+                      <input type="text" placeholder="Search.." name="search" id="unfollow">
+                      <button type="button" id="unfollowUser">Unfollow</button>
+                    </form>
+                </div>
+
+                <!-- <li class='nav-item'>Icon</li>
+                <li class='nav-item'>Icon</li> -->
+            </ul>
+            <!-- <button id="logoutButton">Logout</button> -->
+            <img src="/images/logout.png" id="logoutButton" width="35" height="35"></img>
+            <img src="/images/avatar.png" id="profile" width="35" height="35">
+        </header>
+
+        <main role='main'>
+            <!-- app goes here -->
+            <div id='large-feed'>
+            <!-- inject feed data -->
+            </div>
+            <div id="profile-page">
+                <!-- <div class="profile-pic-container">
+                    <img src="images/profile.jpg" class="img-circle" alt="Cinque Terre" width="150" height="150">
+                </div> -->
+                <div class="username-container">
+                    <h1 class="USER_NAME"></h1>
+                    <img src="/images/add.png" type="button" id="createPost" alt="Cinque Terre" width="35" height="35">
+                </div>
+                <div id="PostFormContainer">
+                    <form class="form-signin">
+                        <input type="file" id="imgPost" class="form-control"/>
+                        <input type="text" placeholder="Enter Description" class="form-control" id="descriptionOfPost"/>
+                        <button type="button" id="postNew" class="form-control">Post</button>
+                    </form>
+                </div>
+                <!-- <button>Edit Profile</button> -->
+                <ul class="details">
+                    <li id="posts"></li>
+                    <li id="followers"></li>
+                    <li id="following"></li>
+                </ul>
+                <div id='self-posts'>
+                <!-- inject feed data -->
+                </div>
+            </div>
+            <button type="button" id="loadMore" class="seeMore">loadMore</button>
+
+
+
+        </main>
+
+
+        <footer>
+            <!-- <p>Instacram example</p> -->
+        </footer>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+                <div id="who-likes">
+                </div>
+          </div>
+
+        </div>
+
+        <div id="followings" class="modal">
+            <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+                <div id="followingList">
+                </div>
+          </div>
+        </div>
+
+        <script type="module" src="src/main.js"></script>
+    <div>
+</body>
+
+</html>
